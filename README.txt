@@ -1,33 +1,40 @@
-Strata by HTML5 UP
-html5up.net | @ajlkn
-Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Kelvin Imalenowa — Developer Portfolio
 
+This repository contains the source code for my personal software development portfolio.
 
-A simple, minimalist template that actually began life as an unused redesign of my
-personal site. Includes a (configurable) parallax background effect, Poptrox-powered
-lightbox gallery, a bunch of pre-styled elements, and Sass sources for the Sass-inclined.
+I built this portfolio to showcase the projects I’m creating as I continue developing my skills as a software engineer. My background is in marketing, operations, and community-focused programming, and I’m especially interested in building technology that solves practical problems and creates better digital experiences.
 
-Demo images* courtesy of Unsplash, a radtastic collection of CC0 (public domain) images
-you can use for pretty much whatever.
+About the Portfolio
 
-(* = Not included)
+The portfolio includes:
 
-Feedback, bug reports, and comments are not only welcome, but strongly encouraged :)
+* A brief introduction and background about me
+* Selected web development and JavaScript projects
+* Links to live project demos and GitHub repositories
+* An overview of my technical skills
+* Contact information
 
-AJ
-aj@lkn.io | @ajlkn
+Built With
 
-PS: Not sure how to get that contact form working? Give formspree.io a try (it's awesome).
+* HTML5
+* CSS3
+* JavaScript
+* Git & GitHub
 
+Featured Projects
 
-Credits:
+The portfolio highlights projects I’ve built while learning and practicing software development, including responsive websites, JavaScript applications, and other coding exercises.
 
-	Demo Images:
-		Unsplash (unsplash.com)
+Each project includes links to the live site and/or its GitHub repository where available.
 
-	Icons:
-		Font Awesome (fontawesome.io)
+Background
 
-	Other:
-		jQuery (jquery.com)
-		Responsive Tools (github.com/ajlkn/responsive-tools)
+Before transitioning into software development, I worked across digital marketing, operations, events, and community programming. That experience shaped how I approach development: thinking not only about how something works, but how people will actually use it.
+
+I’m interested in combining my technical skills with that background to build useful, accessible, and thoughtful digital products.
+
+Contact
+
+I’m always interested in connecting with other developers, businesses, and people working on interesting projects.
+
+Feel free to connect with me through the links available on my portfolio.
