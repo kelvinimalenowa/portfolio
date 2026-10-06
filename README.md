@@ -2,60 +2,77 @@
 
 Software engineer with a background in digital marketing, operations, and digital experience.
 
-I spent the first part of my career working across websites, e-commerce, SEO, analytics, events, and digital campaigns. That experience gave me a strong understanding of how people interact with technology and how digital products can support both users and business goals.
+Before becoming a developer, I worked across websites, e-commerce, SEO, analytics, events, and digital campaigns. That experience gave me a strong understanding of how people interact with technology and how digital products can support both users and business goals.
 
-Now, I bring that perspective into software engineering.
+Today, I bring that perspective into software engineering. I enjoy turning ideas into functional products, solving practical problems through code, and building technology that makes things easier for the people using it.
 
-I enjoy building useful, human-centered products and learning how to turn ideas into functional experiences through code.
-
-## What I Work With
+## 🛠️ What I Work With
 
 - JavaScript
 - HTML
 - CSS
+- Node.js
 - REST APIs
+- Client-Server Architecture
 - DOM Manipulation
+- Object-Oriented Programming
 - Git & GitHub
 - Responsive Design
-- Node.js
 
-## My Background
+## 💻 What I Build
 
-Before transitioning into software engineering, I worked in digital marketing and operations for organizations across retail, e-commerce, arts, and community programming.
+My projects range from smaller applications focused on strengthening core JavaScript concepts to applications that work with APIs and server-side logic.
 
-My work has included:
+Through these projects, I've worked with:
+
+- Interactive user interfaces
+- Application and game logic
+- REST APIs and asynchronous data
+- Client-server communication
+- Server-side JavaScript with Node.js
+- DOM manipulation and event handling
+- Responsive interfaces
+- Git-based development workflows
+
+I'm continuing to expand into backend and full-stack development as I take on larger applications.
+
+## 👋 My Background
+
+Before software engineering, I worked in digital marketing and operations across retail, e-commerce, arts, and community programming.
+
+My work included:
 
 - Managing and improving digital experiences
-- Working with website content and e-commerce platforms
+- Working with websites and e-commerce platforms
 - Using analytics to improve campaigns and user engagement
 - Supporting SEO and digital growth strategies
 - Building community-focused programs and experiences
-- Coordinating projects across multiple teams and stakeholders
+- Coordinating projects across teams, partners, and stakeholders
 
-That background still plays a major role in how I approach development. I tend to think about the person using the product, the problem being solved, and the larger goal behind what I'm building.
+That experience still shapes how I approach development. I'm interested in more than whether something works technically. I think about who is using it, what problem it solves, and how it fits into the larger goal behind the product.
 
-## What I'm Learning
+## 🌱 Where I'm Growing
 
-I'm continuing to strengthen my skills in:
+I'm currently expanding my knowledge of:
 
-- JavaScript
-- Node.js
-- APIs
 - Backend development
-- Object-oriented programming
+- Full-stack application development
 - Application architecture
-- Full-stack development
+- Databases
+- Authentication
+- AI-powered applications
 
-I'm especially interested in opportunities where I can combine software engineering with my experience in digital products, business operations, and user experience.
+Long term, I'm especially interested in building technology that helps people and businesses work more effectively, whether that's improving an everyday process, connecting people with opportunities, or making useful information easier to access.
 
-## This Portfolio
+## 🚀 This Portfolio
 
 This repository contains the code for my personal portfolio.
 
-The site includes a selection of software projects alongside some of my previous digital and marketing work to show the broader experience I bring to product development.
+My portfolio includes software projects alongside selected work from my previous career in digital marketing and operations. Together, they show both my technical development and the broader product and business perspective I bring to software engineering.
 
-## Connect With Me
+## 📫 Connect With Me
 
 **Kelvin Imalenowa**
 
 [LinkedIn](https://www.linkedin.com/in/kelvin-imalenowa)
+[Calendly](https://www.calendly.com/imalenowa)
