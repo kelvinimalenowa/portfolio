@@ -21,3 +21,25 @@ python3 -m http.server 8000 --bind 127.0.0.1
 ```
 
 Open [localhost:8000](http://127.0.0.1:8000/).
+
+## Automatic deployment
+
+The workflow in [.github/workflows/deploy.yml](.github/workflows/deploy.yml) updates
+the existing site at https://kelvin.staticdomains.app when site files are pushed
+to `main`. It can also be started from GitHub’s Actions tab using **Run workflow**.
+
+### One-time connection
+
+1. Generate an API key in your paid Static.app account. Ensure the workspace
+   containing `kelvin.staticdomains.app` is active.
+2. In this GitHub repository, open **Settings → Secrets and variables → Actions**.
+   Create a repository secret named `STATIC_API_KEY` containing that key.
+3. Commit and push the workflow and the site files, including any new images.
+4. Open **Actions → Deploy portfolio to Static.app** and check the deployment result.
+
+The workflow finds the existing site by its exact hostname and requires a single
+match before uploading. It packages committed `index.html`, `assets/`, and
+`images/`. The API key belongs in GitHub Secrets.
+
+The deployment uses Static.app’s documented
+[site listing and ZIP upload API](https://static.app/api/docs).

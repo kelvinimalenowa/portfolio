@@ -1,0 +1,84 @@
+name: Deploy portfolio to Static.app
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - index.html
+      - assets/**
+      - images/**
+      - .github/workflows/deploy.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: static-portfolio-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      STATIC_API_KEY: ${{ secrets.STATIC_API_KEY }}
+      SITE_HOST: kelvin.staticdomains.app
+
+    steps:
+      - name: Check out portfolio
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Check deployment credentials
+        shell: bash
+        run: |
+          if [ -z "$STATIC_API_KEY" ]; then
+            echo "::error::Add a repository Actions secret named STATIC_API_KEY with your Static.app API key."
+            exit 1
+          fi
+
+      - name: Find the existing portfolio site
+        shell: bash
+        run: |
+          curl --fail --silent --show-error \
+            --connect-timeout 15 --max-time 60 \
+            --header "Authorization: Bearer $STATIC_API_KEY" \
+            https://api.static.app/v1/sites \
+            --output "$RUNNER_TEMP/static-sites.json"
+
+          site_id=$(jq -er --arg host "$SITE_HOST" '
+            [.data[] | select(
+              (.full_url | sub("^https?://"; "") | split("/")[0]) == $host
+            ) | .pid] |
+            if length == 1 and (.[0] | type == "string" and length > 0)
+            then .[0]
+            else error("Expected exactly one existing portfolio site in the active Static.app workspace")
+            end
+          ' "$RUNNER_TEMP/static-sites.json")
+          echo "STATIC_SITE_ID=$site_id" >> "$GITHUB_ENV"
+
+      - name: Check JavaScript and package site files
+        shell: bash
+        run: |
+          node --check assets/js/portfolio.js
+          git archive --format=zip --output="$RUNNER_TEMP/portfolio.zip" \
+            HEAD index.html assets images
+          unzip -t "$RUNNER_TEMP/portfolio.zip"
+
+      - name: Update the existing site
+        shell: bash
+        run: |
+          curl --fail --silent --show-error \
+            --connect-timeout 15 --max-time 600 \
+            --header "Authorization: Bearer $STATIC_API_KEY" \
+            --form "archive=@$RUNNER_TEMP/portfolio.zip" \
+            --form-string "pid=$STATIC_SITE_ID" \
+            https://api.static.app/v1/sites/zip \
+            --output "$RUNNER_TEMP/static-deployment.json"
+
+          jq -e --arg pid "$STATIC_SITE_ID" \
+            '.status == "success" and .pid == $pid' \
+            "$RUNNER_TEMP/static-deployment.json" > /dev/null
+          echo "Updated https://$SITE_HOST" >> "$GITHUB_STEP_SUMMARY"
