@@ -1098,3 +1098,62 @@ footer {
         height: 420px
     }
 }
+.featured-project > p,
+.project-actions {
+    margin-inline: 28px;
+}
+
+.project-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    margin-top: 18px;
+}
+
+.project-preview {
+    background: var(--blue-soft);
+}
+
+.project-preview img {
+    object-fit: contain;
+}
+
+.webseek-cover {
+    display: grid;
+    place-content: center;
+    gap: 8px;
+    padding: 24px;
+    background: #203448;
+    color: var(--white);
+}
+
+.webseek-cover span {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 800;
+    letter-spacing: -.05em;
+}
+
+.webseek-cover small,
+.footer-credit {
+    font-family: 'DM Mono', monospace;
+}
+
+.webseek-cover small {
+    color: var(--blue-soft);
+}
+
+.project-archive {
+    margin-top: 32px;
+    border-top: 1px solid var(--line);
+}
+
+.project-archive summary {
+    padding: 18px 0;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+:focus-visible {
+    outline: 2px solid var(--blue-deep);
+    outline-offset: 4px;
+}

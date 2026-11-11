@@ -1,78 +1,23 @@
-# Kelvin Imalenowa
+# Kelvin Imalenowa’s developer portfolio
 
-Software engineer with a background in digital marketing, operations, and digital experience.
+I’m a creative software developer with a background in digital marketing and operations. I build full-stack web apps with the same questions I brought to websites and campaigns: who’s using this, what are they trying to do, and where might they get stuck?
 
-Before becoming a developer, I worked across websites, e-commerce, SEO, analytics, events, and digital campaigns. That experience gave me a strong understanding of how people interact with technology and how digital products can support both users and business goals.
+[Live portfolio](https://kelvin.staticdomains.app/) · [GitHub profile](https://github.com/kelvinimalenowa) · [LinkedIn](https://www.linkedin.com/in/kelvin-imalenowa)
 
-Today, I bring that perspective into software engineering. I enjoy turning ideas into functional products, solving practical problems through code, and building technology that makes things easier for the people using it.
+## Featured software
 
-## 🛠️ What I Work With
+- **Web Seek · In development** — Business discovery, saved leads, outreach notes, and follow-up status for freelance web developers. [Source code](https://github.com/kelvinimalenowa/webseek)
+- **Vinyl Room** — A full-stack music recommendation app with sign-in, upvotes, and Spotify album art. [Open app](https://vinyl-room.onrender.com/) · [Source code](https://github.com/kelvinimalenowa/vinyl-room)
+- **Civical** — A community events board built with Express, Mongoose, and EJS. Visitors can browse upcoming events, and the app supports creating, viewing, editing, and deleting listings. [Open app](https://civical.onrender.com/) · [Source code](https://github.com/kelvinimalenowa/civical)
 
-- JavaScript
-- HTML
-- CSS
-- Node.js
-- REST APIs
-- Client-Server Architecture
-- DOM Manipulation
-- Object-Oriented Programming
-- Git & GitHub
-- Responsive Design
+The site also includes the Flynn Digital Playbill, earlier software projects, and selected digital marketing work.
 
-## 💻 What I Build
+## Local preview
 
-My projects range from smaller applications focused on strengthening core JavaScript concepts to applications that work with APIs and server-side logic.
+This is a static HTML, CSS, and JavaScript site. Serve it from the repository root with Python 3:
 
-Through these projects, I've worked with:
+```sh
+python3 -m http.server 8000 --bind 127.0.0.1
+```
 
-- Interactive user interfaces
-- Application and game logic
-- REST APIs and asynchronous data
-- Client-server communication
-- Server-side JavaScript with Node.js
-- DOM manipulation and event handling
-- Responsive interfaces
-- Git-based development workflows
-
-I'm continuing to expand into backend and full-stack development as I take on larger applications.
-
-## 👋 My Background
-
-Before software engineering, I worked in digital marketing and operations across retail, e-commerce, arts, and community programming.
-
-My work included:
-
-- Managing and improving digital experiences
-- Working with websites and e-commerce platforms
-- Using analytics to improve campaigns and user engagement
-- Supporting SEO and digital growth strategies
-- Building community-focused programs and experiences
-- Coordinating projects across teams, partners, and stakeholders
-
-That experience still shapes how I approach development. I'm interested in more than whether something works technically. I think about who is using it, what problem it solves, and how it fits into the larger goal behind the product.
-
-## 🌱 Where I'm Growing
-
-I'm currently expanding my knowledge of:
-
-- Backend development
-- Full-stack application development
-- Application architecture
-- Databases
-- Authentication
-- AI-powered applications
-
-Long term, I'm especially interested in building technology that helps people and businesses work more effectively, whether that's improving an everyday process, connecting people with opportunities, or making useful information easier to access.
-
-## 🚀 This Portfolio
-
-This repository contains the code for my personal portfolio.
-
-My portfolio includes software projects alongside selected work from my previous career in digital marketing and operations. Together, they show both my technical development and the broader product and business perspective I bring to software engineering.
-
-## 📫 Connect With Me
-
-**Kelvin Imalenowa**
-
-[LinkedIn](https://www.linkedin.com/in/kelvin-imalenowa)
-[Calendly](https://www.calendly.com/imalenowa)
+Open [localhost:8000](http://127.0.0.1:8000/).
