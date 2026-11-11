@@ -38,8 +38,15 @@ to `main`. It can also be started from GitHub’s Actions tab using **Run workfl
 4. Open **Actions → Deploy portfolio to Static.app** and check the deployment result.
 
 The workflow finds the existing site by its exact hostname and requires a single
-match before uploading. It packages committed `index.html`, `assets/`, and
-`images/`. The API key belongs in GitHub Secrets.
+match before uploading. It packages tracked `index.html`, `assets/`, and
+`images/`, with content-versioned CSS and JavaScript filenames so browsers load
+the matching styles and behavior for each deployment. The API key belongs in GitHub Secrets.
 
 The deployment uses Static.app’s documented
 [site listing and ZIP upload API](https://static.app/api/docs).
+
+## Appearance and interactions
+
+The charcoal and blue design includes a light/dark switch that remembers the
+visitor’s selection, project category filters, and a creative campaign selector.
+All project and campaign content remains readable when JavaScript is unavailable.

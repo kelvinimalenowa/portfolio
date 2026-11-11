@@ -8,6 +8,7 @@ on:
       - assets/**
       - images/**
       - .github/workflows/deploy.yml
+      - .github/scripts/**
   workflow_dispatch:
 
 permissions:
@@ -68,8 +69,7 @@ jobs:
         shell: bash
         run: |
           node --check assets/js/portfolio.js
-          git archive --format=zip --output="$RUNNER_TEMP/portfolio.zip" \
-            HEAD index.html assets images
+          python3 .github/scripts/package-site.py "$RUNNER_TEMP/portfolio.zip"
           unzip -t "$RUNNER_TEMP/portfolio.zip"
 
       - name: Update the existing site
