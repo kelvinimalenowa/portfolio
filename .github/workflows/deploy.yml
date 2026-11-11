@@ -27,7 +27,7 @@ jobs:
 
     steps:
       - name: Check out portfolio
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 
@@ -49,8 +49,13 @@ jobs:
             --output "$RUNNER_TEMP/static-sites.json"
 
           site_id=$(jq -er --arg host "$SITE_HOST" '
-            [.data[] | select(
-              (.full_url | sub("^https?://"; "") | split("/")[0]) == $host
+            (if type == "array" then .
+             elif type == "object" and (.data | type == "array") then .data
+             else error("Static.app returned an unexpected site list format")
+             end) |
+            [.[] | select(
+              ((.full_url // .url // .domain // "") |
+                sub("^https?://"; "") | split("/")[0]) == $host
             ) | .pid] |
             if length == 1 and (.[0] | type == "string" and length > 0)
             then .[0]
