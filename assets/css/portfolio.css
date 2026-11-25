@@ -176,8 +176,23 @@ h1 > span { color: var(--blue); }
 .window-dots { display: flex; gap: 5px; }
 .window-dots i { width: 6px; height: 6px; border-radius: 50%; background: var(--faint); }
 .window-dots i:first-child { background: var(--orange); }
-.intro-photo { position: relative; background: var(--raised); overflow: hidden; }
-.intro-photo img { width: 100%; height: auto; }
+.intro-photo {
+    position: relative;
+    display: grid;
+    justify-items: center;
+    padding: 20px 20px 0;
+    background: var(--raised);
+    overflow: hidden;
+}
+.intro-photo img {
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
 .photo-caption {
     display: block;
     padding: 9px 15px;
