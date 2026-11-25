@@ -4,11 +4,12 @@ I’m a creative software developer with a background in digital marketing and o
 
 [Live portfolio](https://kelvin.staticdomains.app/) · [GitHub profile](https://github.com/kelvinimalenowa) · [LinkedIn](https://www.linkedin.com/in/kelvin-imalenowa)
 
-## Featured software
+## Featured work
 
 - **Web Seek · In development** — Business discovery, saved leads, outreach notes, and follow-up status for freelance web developers. [Source code](https://github.com/kelvinimalenowa/webseek)
 - **Vinyl Room** — A full-stack music recommendation app with sign-in, upvotes, and Spotify album art. [Open app](https://vinyl-room.onrender.com/) · [Source code](https://github.com/kelvinimalenowa/vinyl-room)
 - **Civical** — A community events board built with Express, Mongoose, and EJS. Visitors can browse upcoming events, and the app supports creating, viewing, editing, and deleting listings. [Open app](https://civical.onrender.com/) · [Source code](https://github.com/kelvinimalenowa/civical)
+- **Pizzerino** — A live client website for a local pizzeria, with menus, party platters, pickup and delivery links, and visit information. Built with HTML, CSS, and JavaScript. [Visit website](https://eatpizzerino.com/)
 
 The site also includes the Flynn Digital Playbill, earlier software projects, and selected digital marketing work.
 

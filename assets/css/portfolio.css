@@ -377,55 +377,6 @@ footer a > span { color: var(--faint); }
 :root[data-theme="light"] .logo-window {
     filter: invert(1);
 }
-.client-progress {
-    display: grid;
-    grid-template-columns: 125px minmax(0, 1fr) auto;
-    align-items: center;
-    gap: 28px;
-    margin-top: 45px;
-    padding: 30px 0;
-    border-block: 1px solid var(--line);
-}
-.client-progress-logo {
-    display: grid;
-    place-items: center;
-    padding: 18px;
-    border-radius: 8px;
-    background: #f1e6d3;
-}
-.client-progress-copy .code-comment { margin-bottom: 8px; }
-.client-progress-copy h3 {
-    margin: 0 0 12px;
-    font-size: 1.35rem;
-    letter-spacing: -.025em;
-}
-.client-progress-copy > p:last-child {
-    margin: 0;
-    color: var(--muted);
-    font-size: .94rem;
-}
-.progress-label, .archive-destination {
-    color: var(--faint);
-    font: .72rem/1.6 'DM Mono', monospace;
-}
-.progress-label {
-    padding: 8px 12px;
-    border: 1px solid var(--line);
-    border-radius: 5px;
-}
-
-
-@media (max-width: 950px) {
-    .client-progress { grid-template-columns: 100px minmax(0, 1fr); }
-    .progress-label { grid-column: 2; justify-self: start; }
-}
-@media (max-width: 680px) {
-    .client-progress { gap: 20px; grid-template-columns: 80px minmax(0, 1fr); }
-    .client-progress-logo { padding: 10px; }
-    .client-progress-copy h3 { font-size: 1.2rem; }
-    .client-progress-copy > p:last-child { font-size: .88rem; }
-}
-
 .toolkit-intro > p:last-child {
     max-width: 280px;
     color: var(--muted);
